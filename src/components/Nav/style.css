@@ -1,0 +1,12 @@
+.container {
+    background-color: lightslategrey;
+    padding: 2em;
+    color: black;
+    align-content: center;
+    display: flex;
+    border-bottom: solid 5px black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

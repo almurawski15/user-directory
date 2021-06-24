@@ -1,28 +1,29 @@
 import React from "react";
+import "./style.css";
 
 function Results(props) {
     return (
         <div className="container-fluid">
-          <table className="table table-hover">
-            <thead>
-                <tr>
-                <th scope="col">Photo</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Phone</th>
-                <th scope="col">City</th>
+          <table className="table">
+            <thead className="table-header">
+                <tr className="header-row">
+                <th className="header-item" scope="col">Photo</th>
+                <th className="header-item" scope="col">First Name</th>
+                <th className="header-item" scope="col">Last Name</th>
+                <th className="header-item" scope="col">Email</th>
+                <th className="header-item" scope="col">Phone</th>
+                <th className="header-item" scope="col">City</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className="table-content">
             {props.users? props.users.map((user, i) => 
-                <tr key={i}>
-                <td><img src= {user.picture.medium}/></td>
-                <td>{user.name.first}</td>
-                <td>{user.name.last}</td>
-                <td>{user.email}</td>
-                <td>{user.phone}</td>
-                <td>{user.location.city}</td>
+                <tr className="table-row" key={i}>
+                <td className="table-data"><img src= {user.picture.medium}/></td>
+                <td className="table-data">{user.name.first}</td>
+                <td className="table-data">{user.name.last}</td>
+                <td className="table-data">{user.email}</td>
+                <td className="table-data">{user.phone}</td>
+                <td className="table-data">{user.location.city}</td>
                 </tr>
                 ): <p>No repo available!</p>}
             </tbody>
