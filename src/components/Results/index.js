@@ -17,7 +17,7 @@ function Results(props) {
             <tbody>
             {props.users? props.users.map((user, i) => 
                 <tr key={i}>
-                <td><img src= {user.picture.thumbnail}/></td>
+                <td><img src= {user.picture.medium}/></td>
                 <td>{user.name.first}</td>
                 <td>{user.name.last}</td>
                 <td>{user.email}</td>
