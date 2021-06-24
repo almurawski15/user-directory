@@ -4,7 +4,7 @@ function NavBar () {
     return (
         <nav>
             <div>
-                <h1> Search Bar Soon </h1>
+                <h1> Employee Directory </h1>
             </div>
         </nav>
     );

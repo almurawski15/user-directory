@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 
 function Footer () {
     return (
-        <footer>
+        <footer className="footer">
             <div>
-                <h1> Edit Footer Here </h1>
+                <h1> Copyright 2021 Murawski </h1>
             </div>
         </footer>
     );
